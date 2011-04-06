@@ -260,3 +260,16 @@ snippet va
 			${2://código}
 		}
 	}
+snippet varl
+	'${1:var}' => $this->$1,
+snippet vare
+	${1:var} = '$this->$1',
+snippet vari
+	'$this->${1:var}', 
+snippet gd
+	$${1:obj} = new ${2:classe}(${3:params});
+	$${4:var} = $$1->getData();
+snippet listar
+	$${1:obj} = new ${2:classe}();
+	$${3:var} = $$1->listar("${4:params}", "${5:order}", "${6:limit}");
+
