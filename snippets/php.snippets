@@ -230,3 +230,33 @@ snippet nf
 	number_format($${1:var}, 2, ',', '.')
 snippet dirf
 	dirname(__FILE__)
+snippet ins
+	$insert = "INSERT INTO ".TABLEPREFIX."${1:tabela}
+						 (${2:campos})
+						 VALUES(${3:valores})";
+	$con->executa($insert);
+snippet update
+	$update = "UPDATE ".TABLEPREFIX."${1:tabela}
+							  SET ${2:campos}
+							WHERE ${3:condicao}";
+	$con->executa($update);
+snippet delete
+	$delete = "DELETE FROM ".TABLEPREFIX."${1:tabela}
+							WHERE ${3:condicao}";
+	$con->executa($delete);
+snippet res
+	$sql = "SELECT * 
+						FROM ".TABLEPREFIX."${1:tabela}
+					 WHERE ${2:parametros}";
+	$res = $con->executa($sql);
+	if(va($res)){
+		foreach($res as $rs){
+			${3://código}
+		}
+	}
+snippet va
+	if(va($${1:array})){
+		foreach($$1 as $k => $v){
+			${2://código}
+		}
+	}

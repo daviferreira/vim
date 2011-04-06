@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/mnt/m2brnet/_M2BRNET/gruposolucoes/dbmkt/site/_final/__envio'
-let g:netrw_dirhist_2='/mnt/m2brnet/_M2BRNET/sonhodellas/site/_final/admin/_m2brupload/_produtos'
-let g:netrw_dirhist_3='/mnt/m2brnet/_M2BRNET/gruposolucoes/pragma/_final/admin'
-let g:netrw_dirhist_4='/mnt/m2brnet/_M2BRNET/gruposolucoes/pragma/_final/admin/_js'
-let g:netrw_dirhist_5='/var/www'
-let g:netrw_dirhist_6='/var'
-let g:netrw_dirhist_7='/var/www/rails/funfou/app/models'
