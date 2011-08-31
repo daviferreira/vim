@@ -216,6 +216,8 @@ snippet array
 	$${1:arrayName} = array('${2}' => ${3});${4}
 snippet varform
 	$${1:varname}	= isset($_POST['$1']) ? trim($_POST['$1']) : NULL;
+snippet varformt
+	$this->${1:varname}	= isset($_POST['$1']) ? trim($_POST['$1']) : NULL;
 snippet varformg
 	$${1:varname}	= isset($_GET['$1']) ? trim($_GET['$1']) : NULL;
 snippet varformr
@@ -272,4 +274,5 @@ snippet gd
 snippet listar
 	$${1:obj} = new ${2:classe}();
 	$${3:var} = $$1->listar("${4:params}", "${5:order}", "${6:limit}");
-
+snippet varc
+	'${1:var}' +> $$1,
