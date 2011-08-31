@@ -135,6 +135,8 @@ nmap <Space> <PageDown>
 " open filename under cursor in a new window (use current file's working
 " directory) 
 nmap gf :new %:p:h/<cfile><CR>
+" NERDTree
+map <F2> :NERDTreeToggle<CR>
 " map <Alt-p> and <Alt-P> to paste below/above and reformat
 nnoremap <Esc>P  P'[v']=
 nnoremap <Esc>p  p'[v']=
@@ -170,7 +172,7 @@ endif
 let mapleader = ","
 
 set number
-set background=dark
-colorscheme ir_black 
+set background=light
+colorscheme winter 
 
 let snips_author = 'Davi Ferreira'
